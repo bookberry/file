@@ -110,8 +110,8 @@
 
 	<?php
 		echo '<ul class="navigator">';
-		if ($nextButton)	echo '<li><a href = "'.$nextPage.'"> На следующую </a></li>';
 		if ($page > 1)		echo '<li><a href = "'.$prevPage.'"> На предыдущую </a></li>';
+		if ($nextButton)	echo '<li><a href = "'.$nextPage.'"> На следующую </a></li>';
 		echo '</ul>';
 	?>
 
