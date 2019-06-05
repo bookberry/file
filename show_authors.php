@@ -67,8 +67,10 @@
 		</table>
 
 <?php
-	if ($nextButton) echo '<a href = "'.$nextPage.'"><h2 align = "center">На следующую</h2></a>';
-	if ($page > 1) echo '<a href = "'.$prevPage.'"><h2 align = "center">На предыдущую</h2></a>';
+	echo '<ul class="navigator">';
+    if ($nextButton)	echo '<li><a href = "'.$nextPage.'"> На следующую </a></li>';
+    if ($page > 1)		echo '<li><a href = "'.$prevPage.'"> На предыдущую </a></li>';
+    echo '</ul>';
 ?>
 		
 </div>
