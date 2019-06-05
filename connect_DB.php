@@ -295,10 +295,10 @@ function getBooks($sql)
 }
 
 /* кол-во книг на странице */
-define("BOOKONPAGE", "24");
+define("BOOKONPAGE", "1");
 
 /* кол-во авторов на странице */
-define("AUTHORSONPAGE", "24");
+define("AUTHORSONPAGE", "4");
 
 $link = connect_DB("localhost", "root", "", "lib");
 

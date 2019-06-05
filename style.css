@@ -160,16 +160,3 @@
 	font-family: 'Amatic SC', cursive;
 	bottom: 0px;
 }  
-
-ul.navigator {
-	margin: 0; /* Обнуляем значение отступов */
-	padding: 10px; /* Значение полей */
-	text-align: center;
-	font-size: 30px;
-}
-
-ul.navigator li {
-	display: inline; /* Отображать как строчный элемент */
-	margin-right: 50px; /* Отступ слева */
-	padding: 3px; /* Поля вокруг текста */
-}
