@@ -173,3 +173,8 @@ ul.navigator li {
 	margin-right: 50px; /* Отступ слева */
 	padding: 3px; /* Поля вокруг текста */
 }
+
+/* форма для отправки писем */
+#sform {
+	display:none;
+}
