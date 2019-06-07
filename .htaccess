@@ -1,0 +1,16 @@
+# установка кодировки
+AddDefaultCharset UTF-8
+
+
+# Включаем mod_rewrite
+RewriteEngine On
+
+# Перенаправляем главную страницу на show_authors.php
+RewriteRule ^$ show_authors.php
+
+# Красивое оформление url страницы книг по тегу
+RewriteRule ^showBooks-tag-(.*)$ show_books.php?tag=$1
+
+# Самостоятельная обработка ошибки несуществующего url
+ErrorDocument 404 /404/
+
