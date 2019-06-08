@@ -300,6 +300,6 @@ define("BOOKONPAGE", "24");
 /* кол-во авторов на странице */
 define("AUTHORSONPAGE", "24");
 
-$link = connect_DB("vh201.timeweb.ru", "ca20208_library", "12345", "ca20208_library");
+$link = connect_DB("localhost", "root", "", "lib");
 
 ?>
