@@ -1,9 +1,10 @@
 /* анимация развертки/свертки формы (используется jqerry!!!!) */
-function anichange (objName) {
+function showhide(objName) {
 	if ( $(objName).css('display') == 'none' ) {
 		$(objName).animate({height: 'show'}, 400);
+		document.getElementById('showform' ).style.display = 'none';
 	} else {
-		$(objName).animate({height: 'hide'}, 200);
+		$(objName).animate({height: 'hide'}, 200, "linear", function(){document.getElementById('showform' ).style.display = 'inline';});
 	}
 }
 

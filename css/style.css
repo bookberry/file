@@ -177,4 +177,21 @@ ul.navigator li {
 /* форма для отправки писем */
 #sform {
 	display:none;
+	position: fixed;
+	left: 60%; 
+	bottom: 0;	
+	background-color: brown;
+	padding: 10px;
+	width: 500px;
+	border-radius: 10px;
+}
+
+
+#showform {
+	position: fixed;
+	left: 70%; 
+	bottom: 0;
+	border-radius: 10px 10px 0px 0px;
+	background-color: brown;
+	padding: 10px;
 }

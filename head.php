@@ -42,14 +42,6 @@
 			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Отечественные произведения</b></a></p> 
 			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Зарубежнные книги</b></a></p> 
 			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Современные писатели</b></a></p>  
-
-			<a href="#" onclick="anichange('#sform'); return false">Написать нам письмо</a>
-			<form id="sform" name="sform" action="send.php" method="post" onsubmit="return validateAndSubmit();">
-				<input type="email" name="email" placeholder="Введите свой email" class="form-control"><br>
-				<textarea name="message" placeholder="Текст" class="form-control" rows = "10"></textarea>
-				<button name="send" class="btn btn-success">Отправить</button>
-			</form>
-
 		</div> 
 
 		<div id = "sidebar2" style = "float: right">
@@ -76,4 +68,17 @@
 
 			<a href = "show_books.php?forbusiness" style = "color: white">Заинтересовались? Показать полностью...</a>
 
+		</div>
+
+		<div id="showform">
+			<a href="#" onclick="showhide('#sform'); return false" style="color: white">Написать нам письмо</a>
+		</div>
+
+		<div id="sform">
+			<a href="#" onclick="showhide('#sform'); return false" style="color: white">свернуть</a><br><br>
+			<form name="sform" action="send.php" method="post" onsubmit="return validateAndSubmit();">
+				<input type="email" name="email" placeholder="Введите свой email" class="form-control"><br>
+				<textarea name="message" placeholder="Текст" class="form-control" rows = "10"></textarea><br>
+				<button name="send" class="btn btn-success">Отправить</button>
+			</form>
 		</div>
