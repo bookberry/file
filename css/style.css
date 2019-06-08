@@ -1,6 +1,6 @@
 #wrapper {
   /* Оболочка страницы сайта */
-  width: 980px; /* Меняется ширина страницы */
+  width: 85%; /* Меняется ширина страницы */
   margin: 25px auto;
   border-radius: 10px; /* Закругляются углы блока */
   height: 0px;
@@ -57,16 +57,13 @@
 
 #content {
   /* Блок контента */
-  width: 52%; /* Ширина статьи */
+  width: 100%; /* Ширина статьи */
   background: #000; /* Фон статьи */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
   font-family: "Amatic SC", cursive;
   color: white; /*Цвет текста в блоке контент*/
-  padding: 5px 0px;
   min-height: 1000px;
-  margin: 5px;
-  float: left;
 }
 
 #content a {
@@ -138,7 +135,6 @@
   height: 30px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
-  margin-bottom: 20px;
 }
 
 .menu button {

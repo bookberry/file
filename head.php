@@ -32,14 +32,12 @@
 				<td width="20%"><button>ЦИТАТЫ</button></td>
 			</tr>
 		</table>
-
 		<div id="sidebar1">
 			<h3 style="font-size: 36px">На нашем сайте:</h3>
 			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Отечественные произведения</b></a></p>
 			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Зарубежнные книги</b></a></p>
 			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Современные писатели</b></a></p>
 		</div>
-		<div id="content"></div>
 		<div id="sidebar2">
 			<h3>Топ 10 книг по бизнесу:</h3>
 
@@ -67,3 +65,4 @@
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 			<script src="js/button_script.js"></script>
 		</div>
+		<div id="content"></div>
