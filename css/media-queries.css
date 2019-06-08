@@ -1,0 +1,46 @@
+@media only screen and (max-width: 992px) {
+  #wrapper {
+    width: 750px;
+  }
+  #footer {
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    width: 450px;
+  }
+  #header {
+    height: 160px;
+    border-radius: 5px;
+  }
+  .menu {
+    height: 15px;
+  }
+  #sidebar1 {
+    width: 100%;
+    margin-top: 5px;
+    float: none;
+  }
+  #sidebar2 {
+    width: 100%;
+    margin-top: 5px;
+    float: none;
+  }
+  #content {
+    width: 100%;
+    margin-top: 5px;
+  }
+  #footer {
+    margin-top: 5px;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #wrapper {
+    width: 320px;
+  }
+  * {
+    transition: all 0.2s;
+  }
+}

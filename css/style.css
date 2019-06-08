@@ -1,9 +1,9 @@
 #wrapper {
   /* Оболочка страницы сайта */
-  width: 1300px; /* Меняется ширина страницы */
-  margin: 0 auto;
+  width: 980px; /* Меняется ширина страницы */
+  margin: 25px auto;
   border-radius: 10px; /* Закругляются углы блока */
-  min-height: 800px;
+  height: 0px;
 }
 /* Шапка сайта */
 #header {
@@ -32,20 +32,21 @@
   width: 20%; /* Ширина блока */
   padding: 10px; /* Отступ текста от краёв */
   border-radius: 10px; /* Закругляем углы блока */
-  margin-top: 0px;
+  margin: 5px;
   font-family: "Amatic SC", cursive;
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
   font-size: 36px;
+  float: left;
 }
 #sidebar2 {
   background-color: #800080;
   width: 25%;
   padding: 10px;
   border-radius: 5px;
-  margin-top: 0px;
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
   font-family: "Amatic SC", cursive;
   font-size: 36px;
+  float: right;
 }
 
 #marcer {
@@ -56,7 +57,7 @@
 
 #content {
   /* Блок контента */
-  width: 100%; /* Ширина статьи */
+  width: 52%; /* Ширина статьи */
   background: #000; /* Фон статьи */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
@@ -64,6 +65,8 @@
   color: white; /*Цвет текста в блоке контент*/
   padding: 5px 0px;
   min-height: 1000px;
+  margin: 5px;
+  float: left;
 }
 
 #content a {
@@ -78,7 +81,7 @@
 .table_authors {
   width: 50%;
   table-layout: auto;
-  color: inherit;
+  color: inhe it;
 }
 
 .table_authors td {
@@ -135,6 +138,7 @@
   height: 30px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
+  margin-bottom: 20px;
 }
 
 .menu button {
@@ -157,12 +161,14 @@
 #footer {
   /* Блок подвала */
   height: 50px; /* Высота блока подвала */
+  width: 100%;
   background-color: #000; /* Фон блока подвала */
   /*margin-bottom: 5px;  Отступ снизу */
   border-radius: 5px; /* Закруглённые углы */
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
   font-family: "Amatic SC", cursive;
   bottom: 0px;
+  float: right;
 }
 
 ul.navigator {

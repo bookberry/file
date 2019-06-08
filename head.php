@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<title><?= $title ?></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/media-queries.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="http://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" defer></script>
@@ -31,49 +32,50 @@
 				<td width="20%"><button>ЦИТАТЫ</button></td>
 			</tr>
 		</table>
-	</div>
 
-	<div id="sidebar1" style="float: left">
-		<h3 style="font-size: 36px">На нашем сайте:</h3>
-		<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Отечественные произведения</b></a></p>
-		<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Зарубежнные книги</b></a></p>
-		<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Современные писатели</b></a></p>
+		<div id="sidebar1">
+			<h3 style="font-size: 36px">На нашем сайте:</h3>
+			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Отечественные произведения</b></a></p>
+			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Зарубежнные книги</b></a></p>
+			<p style="font-size: 26px"><a href="show_books.php?tag=">&bull;<b>Современные писатели</b></a></p>
 
-		<a href="#" onclick="anichange('#sform'); return false">Написать нам письмо</a>
-		<form id="sform" name="sform" action="send.php" method="post" onsubmit="return validateAndSubmit();">
-			<input type="email" name="email" placeholder="Введите свой email" class="form-control"><br>
-			<textarea name="message" placeholder="Текст" class="form-control" rows="10"></textarea>
-			<button name="send" class="btn btn-success">Отправить</button>
-		</form>
+			<a href="#" onclick="anichange('#sform'); return false">Написать нам письмо</a>
+			<form id="sform" name="sform" action="send.php" method="post" onsubmit="return validateAndSubmit();">
+				<input type="email" name="email" placeholder="Введите свой email" class="form-control"><br>
+				<textarea name="message" placeholder="Текст" class="form-control" rows="10"></textarea>
+				<button name="send" class="btn btn-success">Отправить</button>
+			</form>
 
-	</div>
+		</div>
+		<div id="content"></div>
+		<div id="sidebar2">
+			<h3>Топ 10 книг по бизнесу:</h3>
 
-	<div id="sidebar2" style="float: right">
-		<h3>Топ 10 книг по бизнесу:</h3>
+			<table class="table_book_info" cols="2" width="100%">
+				<?php
+				$books2 = getBooks('SELECT BOOK_ID AS ID FROM BUSINESSTOP');
+				$i = 1;
 
-		<table class="table_book_info" cols="2" width="100%">
-			<?php
-			$books2 = getBooks('SELECT BOOK_ID AS ID FROM BUSINESSTOP');
-			$i = 1;
+				foreach ($books2 as $book) {
+					if ($i == 4) break;
+					echo "<tr>";
+					echo '<td width = "3%">' . $i . '</td>';
+					echo '<td width = "30%"><img src = "' . $book->getImage() . '"></td>';
+					echo '<td>' . $book->getName() . '<p>' . mb_strimwidth($book->getDiscription(), 0, 100, "...", "UTF-8") . '</p></td>';
+					echo "</tr>";
+					$i++;
+				}
 
-			foreach ($books2 as $book) {
-				if ($i == 4) break;
-				echo "<tr>";
-				echo '<td width = "3%">' . $i . '</td>';
-				echo '<td width = "30%"><img src = "' . $book->getImage() . '"></td>';
-				echo '<td>' . $book->getName() . '<p>' . mb_strimwidth($book->getDiscription(), 0, 100, "...", "UTF-8") . '</p></td>';
-				echo "</tr>";
-				$i++;
-			}
+				?>
+			</table>
 
-			?>
-		</table>
+			<a href="show_books.php?forbusiness" style="color: white">Заинтересовались? Показать полностью...</a>
 
-		<a href="show_books.php?forbusiness" style="color: white">Заинтересовались? Показать полностью...</a>
-
-		<a href="#" class="back-to-top"></a>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="js/button_script.js"></script>
+			<a href="#" class="back-to-top"></a>
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="js/button_script.js"></script>
+		</div>
+		<div id="footer"></div>
 	</div>
 </body>
 
