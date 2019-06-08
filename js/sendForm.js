@@ -1,5 +1,5 @@
 /* анимация развертки/свертки формы (используется jqerry!!!!) */
-function anichange (objName) {
+function showhide(objName) {
 	if ( $(objName).css('display') == 'none' ) {
 		$(objName).animate({height: 'show'}, 400);
 	} else {

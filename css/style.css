@@ -184,10 +184,18 @@ ul.navigator li {
   padding: 3px; /* Поля вокруг текста */
 }
 
-/* форма для отправки писем */
+
+.sendBlock {
+	position: fixed;
+	left: 60%; 
+	bottom: 0;	
+	width: 500px;
+}
+
 #sform {
   display: none;
 }
+
 
 /*якорь*/
 button.knopka {
