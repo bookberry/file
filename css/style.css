@@ -186,6 +186,10 @@ ul.navigator li {
 	width: 500px;
 }
 
+#sform {
+  display: none;
+}
+
 
 /*якорь*/
 button.knopka {
