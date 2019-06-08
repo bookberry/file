@@ -67,8 +67,3 @@
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 			<script src="js/button_script.js"></script>
 		</div>
-		<div id="footer"></div>
-	</div>
-</body>
-
-</html>
