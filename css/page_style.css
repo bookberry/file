@@ -1,0 +1,101 @@
+#wrapper {
+  /* Оболочка страницы сайта */
+  width: 1300px; /* Меняется ширина страницы */
+  margin: 0 auto;
+  border-radius: 10px; /* Закругляются углы блока */
+}
+/*якорь*/
+button.knopka {
+  color: black;
+  background: #ffa500;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #ff8247;
+  width: 100%;
+  /*font-size: 10px;*/
+}
+
+button.knopka:hover {
+  background: #ff6347;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: #629460;
+  display: none;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  filter: brightness(1.5);
+  outline: none;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-to-top::before {
+  width: 5px;
+  height: 25px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #f5f0f6;
+}
+
+.back-to-top::after {
+  width: 15px;
+  height: 15px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 5px solid #f5f0f6;
+  border-left: 5px solid #f5f0f6;
+}
+/**/
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+ul {
+  font-size: 24px;
+  margin: 5px 0px 5px 0px;
+}
+
+li {
+  background-color: orange;
+}
+
+footer {
+  font-size: 26px;
+  background-color: orange;
+  text-align: center;
+}
+
+/*Яндекс форма*/
+.myframe {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+iframe {
+  width: 300px;
+}
+/**/
