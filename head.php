@@ -66,3 +66,14 @@
 			<script src="js/button_script.js"></script>
 		</div>
 		<div id="content"></div>
+
+		<div class="sendBlock">
+			<button onclick="showhide('#sform')" style="border-radius: 10px 10px 0px 0px" class="btn btn-success">Написать нам письмо</button>
+			<div id="sform" style="background-color: brown; padding: 20px">
+				<form name="sform" action="send.php" method="post" onsubmit="return validateAndSubmit();">
+					<input type="email" name="email" placeholder="Введите свой email" class="form-control"><br>
+					<textarea name="message" placeholder="Текст" class="form-control" rows="10"></textarea><br>
+					<button name="send" class="btn btn-success">Отправить</button>
+				</form>
+			</div>
+		</div>
