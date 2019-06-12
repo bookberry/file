@@ -70,11 +70,10 @@ require_once "connect_DB.php";
                 <a style="color:black" href="">O нашей компании</a>
             </h3>
         </div>
-        <a href="#" class="back-to-top"></a>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="js/button_script.js"></script>
     </div>
-
+    <a href="#" class="back-to-top"></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/button_script.js"></script>
 </body>
 
 </html>

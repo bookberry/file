@@ -16,6 +16,11 @@
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
 }
 
+#header img {
+  width: 100%;
+  height: 100%;
+}
+
 .nomer {
   /*Подзаголовок (номер телефона)*/
   position: absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
@@ -184,7 +189,7 @@ ul.navigator li {
 
 .sendBlock {
 	position: fixed;
-	left: 60%; 
+	left: 53%; 
 	bottom: 0;	
 	width: 500px;
 }
@@ -238,7 +243,7 @@ button.knopka:hover {
 
 .back-to-top::before {
   width: 5px;
-  height: 25px;
+  height: 18px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #f5f0f6;
@@ -248,6 +253,6 @@ button.knopka:hover {
   width: 15px;
   height: 15px;
   transform: translate(-50%, -50%) rotate(45deg);
-  border-top: 5px solid #f5f0f6;
-  border-left: 5px solid #f5f0f6;
+  border-top: 4px solid #f5f0f6;
+  border-left: 4px solid #f5f0f6;
 }

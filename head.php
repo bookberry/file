@@ -14,7 +14,9 @@
 
 <body background="https://getbg.net/upload/full/www.GetBg.net_Nature___Flowers_Shopping_beautiful_peonies_066089_.jpg">
 	<div id="wrapper">
-		<div id="header"></div>
+		<div id="header">
+			<img src="img/header.jpg">
+		</div>
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 		<table class="menu">
 			<tr>
@@ -61,9 +63,6 @@
 
 			<a href="show_books.php?forbusiness" style="color: white">Заинтересовались? Показать полностью...</a>
 
-			<a href="#" class="back-to-top"></a>
-			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-			<script src="js/button_script.js"></script>
 		</div>
 		<div id="content"></div>
 
@@ -77,3 +76,7 @@
 				</form>
 			</div>
 		</div>
+
+		<a href="#" class="back-to-top"></a>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="js/button_script.js"></script>
