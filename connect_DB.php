@@ -161,7 +161,7 @@ class Author
 	
 function connect_DB($host, $user, $pass, $namedb)
 {
-	$link = mysqli_connect($host, $user, $pass, $namedb);
+	$link = connect_DB("localhost", "ca20208_library", "12345", "ca20208_library");
 
 	if (mysqli_connect_errno())
 	{
