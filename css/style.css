@@ -156,7 +156,7 @@
 }
 #footer {
   /* Блок подвала */
-  height: 50px; /* Высота блока подвала */
+  height: 70px; /* Высота блока подвала */
   width: 100%;
   background-color: #000; /* Фон блока подвала */
   /*margin-bottom: 5px;  Отступ снизу */
@@ -164,6 +164,7 @@
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
   font-family: "Amatic SC", cursive;
   bottom: 0px;
+  margin-top: 10px;
   float: right;
 }
 
