@@ -1,23 +1,10 @@
 #wrapper {
   /* Оболочка страницы сайта */
-  width: 1300px; /* Меняется ширина страницы */
+  width: 100%; /* Меняется ширина страницы */
   margin: 0 auto;
   border-radius: 10px; /* Закругляются углы блока */
 }
 /*якорь*/
-button.knopka {
-  color: black;
-  background: #ffa500;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid #ff8247;
-  width: 100%;
-  /*font-size: 10px;*/
-}
-
-button.knopka:hover {
-  background: #ff6347;
-}
 
 .back-to-top {
   position: fixed;
@@ -98,4 +85,32 @@ footer {
 iframe {
   width: 300px;
 }
-/**/
+
+.menu {
+  /*color:black;*/
+  color: white;
+  width: 100%;
+  /*background-color: #F4C03E;*/
+  background-color: black;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px; /* Тень блока */
+}
+
+.menu button {
+  /*color:black;*/
+  color: white;
+  background-color: inherit;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-family: "Amatic SC", cursive;
+  font-size: 26px;
+}
+
+.menu button:hover {
+  /*background: #FBDA89;*/
+  background: gray;
+}
