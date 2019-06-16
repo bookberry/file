@@ -1,5 +1,4 @@
 ﻿<?php
-
 class Book
 {
 	private $name;
@@ -295,7 +294,7 @@ function getBooks($sql)
 }
 
 /* кол-во книг на странице */
-define("BOOKONPAGE", "24");
+define("BOOKONPAGE", "1");
 
 /* кол-во авторов на странице */
 define("AUTHORSONPAGE", "24");
