@@ -44,7 +44,10 @@
 	}
 
 	require_once "head.php";
+	require_once "sideBar1.php";
+	require_once "sideBar2.php";
 ?>
+
 
 <div id = "content">
 	<h3 align = "center">Авторы</h3>
@@ -56,7 +59,7 @@
 				foreach ($authors as $author) {
 					if ($i % 4 == 0) echo '<tr>';
 
-					echo '<td><a href = "show_books.php?authorId='.$author->getId().'"><img src = '.$author->getImage().'>'.$author->getName().'</a></td>';
+					echo '<td><a href = "books_of_author.php?authorId='.$author->getId().'"><img src = '.$author->getImage().'>'.$author->getName().'</a></td>';
 
 					if ($i % 4 == 3) echo '</tr>';
 
