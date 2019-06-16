@@ -186,18 +186,22 @@ ul.navigator li {
   padding: 3px; /* Поля вокруг текста */
 }
 
+#handd {
+  position: absolute;
+  z-index: 9;
+}
 
 .sendBlock {
-	position: fixed;
-	left: 53%; 
-	bottom: 0;	
-	width: 500px;
+  left: 53%;
+  bottom: 0;
+  width: 500px;
+  cursor: move;
+  z-index: 10;
 }
 
 #sform {
   display: none;
 }
-
 
 /*якорь*/
 button.knopka {

@@ -19,7 +19,7 @@ require_once "connect_DB.php";
 
         <table class="menu">
             <tr>
-                <td width="5%"><button onclick="window.location='http://library'">Home</button></td>
+                <td width="5%"><button onclick="window.location='http://library'"><img src="img/home_button.gif" alt=""></button></td>
                 <td width="20%"><button onclick="window.location='show_books.php?tag=forall'">КНИГИ НА ВСЕ ВРЕМЕНА</button></td>
                 <td width="20%"><button onclick="window.location='show_books.php?tag=forhim'">ДЛЯ НЕГО</button></td>
 
