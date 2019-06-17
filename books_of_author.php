@@ -12,8 +12,10 @@
 	require_once "head.php";
 ?>
 <div id="content">
-	<div style = "">
-		<img style = "float: left; height: 100%" src = <?php  echo "\"$authorImage\""; ?> >
+	<div>
+		<div style="float: left; background: url(<?php  echo "$authorImage"; ?>);background-size: 100% 100%; width: 300px;height: 300px">
+			<img src="img/frame.png" width="100%" height="100%">
+		</div>
 		<h1><?php echo "$authorName"; ?></h1>
 		<p>Родился:		<?php echo ""; ?></p>
 		<p>Вырос:		<?php echo ""; ?></p>
