@@ -188,13 +188,13 @@ ul.navigator li {
 }
 
 #handd {
-  position: absolute;
+  position: fixed;
   z-index: 9;
+  bottom: 0;
+  left: 53%;
 }
 
 .sendBlock {
-  left: 53%;
-  bottom: 0;
   width: 500px;
   cursor: move;
   z-index: 10;
