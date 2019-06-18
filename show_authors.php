@@ -50,7 +50,7 @@
 
 
 <div id = "content">
-	<h3 align = "center">Авторы</h3>
+	<h3 align = "center">Отечественные авторы:</h3>
 
 		<table class = "table_authors" cols = "4">
 			<?php
