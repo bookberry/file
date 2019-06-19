@@ -293,6 +293,12 @@ function getBooks($sql)
 	
 }
 
+function invalid_urlParam($param_name, $value)
+{
+	echo "<script>document.location.href = \"http://".$_SERVER['SERVER_NAME']."\";</script>";
+	exit;
+}
+
 /* кол-во книг на странице */
 define("BOOKONPAGE", "1");
 
