@@ -13,7 +13,7 @@ require_once "connect_DB.php";
     <title>О нас</title>
 </head>
 
-<body background="https://clck.ru/GUqZc">
+<body>
     <div id="wrapper">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 

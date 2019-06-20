@@ -1,3 +1,6 @@
+#content {
+  background-color: rgba(255, 165, 0, 0.5);
+}
 #wrapper {
   /* Оболочка страницы сайта */
   width: 100%; /* Меняется ширина страницы */
@@ -52,6 +55,7 @@
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+  background: url(../img/bg.jpg) no-repeat fixed 100%;
 }
 
 p {

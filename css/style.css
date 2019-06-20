@@ -5,6 +5,9 @@
   border-radius: 10px; /* Закругляются углы блока */
   height: 0px;
 }
+body {
+  background: url(../img/bg.jpg) no-repeat fixed 100%;
+}
 /* Шапка сайта */
 #header {
   position: relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
@@ -190,7 +193,7 @@ ul.navigator li {
   position: fixed;
   z-index: 9;
   bottom: 0;
-  left: 53%;
+  left: 75%;
 }
 
 .sendBlock {
