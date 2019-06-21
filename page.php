@@ -9,14 +9,16 @@ require_once "connect_DB.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/page_style.css">
     <title>О нас</title>
+    <link rel="stylesheet" href="css/page_style.css">
 </head>
 
 <body>
     <div id="wrapper">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-
+        <div id="header">
+            <img src="img/header.jpg" alt="">
+        </div>
         <table class="menu">
             <tr>
                 <td width="5%"><button onclick="window.location='http://library'"><img src="img/home_button.gif" alt=""></button></td>
@@ -26,7 +28,7 @@ require_once "connect_DB.php";
                 <td>
                     <form class="form-search" action="/search/" target="_blank">
                         <input type="hidden" name="searchid" value="808327">
-                        <b><input style="width: 70%; border-bottom: 1px solid; font-size: 36px" type="search" name="text" required placeholder="Поиск"> </b>
+                        <b><input type="search" name="text" required placeholder="Поиск"> </b>
                         <input type="submit" value="🔍">
                     </form>
                 </td>

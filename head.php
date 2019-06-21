@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/media-queries.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<script src="http://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" defer></script>
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" defer></script>
 	<script src="js/sendForm.js" defer></script>
 	<script src="js/button_script.js" defer></script>
 	<script src="js/holdanddrag.js" defer></script>
@@ -30,7 +30,7 @@
 				<td>
 					<form class="form-search" action="/search/" target="_blank">
 						<input type="hidden" name="searchid" value="808327">
-						<b><input style="width: 70%;border-bottom: 1px solid; font-size: 36px" type="search" name="text" required placeholder="Поиск"> </b>
+						<b><input style="width: 70%; border-bottom: 1px solid; font-size: 18px; text-align: center;" type="search" name="text" required placeholder="Поиск"> </b>
 						<input type="submit" value="🔍">
 					</form>
 				</td>
