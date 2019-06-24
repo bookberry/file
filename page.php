@@ -28,7 +28,7 @@ require_once "connect_DB.php";
                 <td>
                     <form class="form-search" action="/search/" target="_blank">
                         <input type="hidden" name="searchid" value="808327">
-                        <b><input type="search" name="text" required placeholder="Поиск"> </b>
+                        <b><input style="width: 70%; border-bottom: 1px solid; font-size: 18px; text-align: center;" type="search" name="text" required placeholder="Поиск"> </b>
                         <input type="submit" value="🔍">
                     </form>
                 </td>
@@ -65,11 +65,6 @@ require_once "connect_DB.php";
             <div class="myframe">
                 <iframe src="https://clck.ru/GMH5t" height="222" frameborder="0" allowtransparency scrolling="no" class="my">
                 </iframe>
-            </div>
-            <div id="footer">
-                <h3 style="color:black">BookBerry:<br>
-                    <a style="color:black" href="">O нашей компании</a>
-                </h3>
             </div>
         </div>
     </div>
