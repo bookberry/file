@@ -23,7 +23,7 @@
 	if (!is_numeric($_GET['page'])) $page = 1;
 	else $page = $_GET['page'];
 
-	if (($page > $countPages)) invalid_urlParam('page', $_GET['page']);
+	if (($page > $countPages) && ($page != 1)) invalid_urlParam('page', $_GET['page']);
 
 	/* расчет сколько книг нужно пропустить в запросе */
 	$lost = ($page - 1) * BOOKONPAGE;
@@ -42,9 +42,8 @@
 ?>
 <div id="content">
 	<div style = "padding: 10px">
-		<div style="float: left; background: url(<?php  echo "$authorImage"; ?>);background-size: 100% 100%; width: 300px;height: 300px">
-			<img src="img/frame.png" width="100%" height="100%">
-		</div>
+		<img src="<?php  echo "$authorImage"; ?>" style="float: left; width: 300px; height: 300px">
+		
 		<h1><?php echo "$authorName"; ?></h1>
 		<p>Родился:		<?php echo ""; ?></p>
 		<p>Вырос:		<?php echo ""; ?></p>
@@ -57,7 +56,8 @@
 	
 	<h1>Книги автора</h1>
 	<?php 
-		require_once "showBooks.php";
+		if (empty($books)) echo "Книг нету пока";
+		else require_once "showBooks.php";
 
 		/* Кнопки навигации */
 		echo '<ul class="navigator">';

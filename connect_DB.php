@@ -161,7 +161,7 @@ class Author
 function connect_DB($host, $user, $pass, $namedb)
 {
 	
-        $link = mysqli_connect($host, $user, $pass, $namedb);
+    $link = mysqli_connect($host, $user, $pass, $namedb);
 	if (mysqli_connect_errno())
 	{
 		echo "Не удалось подключится к базе данных <br>";
