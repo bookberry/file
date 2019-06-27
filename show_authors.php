@@ -26,10 +26,39 @@
 
 		$title = "Авторы";
 	}
+	else if (array_key_exists("foregin", $_GET))
+	{
+		$authors = getAuthors('SELECT ID FROM AUTHORS WHERE NATIVE = false LIMIT '.$lost.','.(AUTHORSONPAGE+1));
+
+		if (isset($authors[AUTHORSONPAGE])) 
+		{
+			$nextButton = true;
+			unset($authors[AUTHORSONPAGE]);
+		}
+
+		$nextPage = "show_authors.php?foregin&page=".($page + 1);
+		$prevPage = "show_authors.php?foregin&page=".($page - 1);
+
+		$title = "Зарубежные авторы";		
+	}
+	else if (array_key_exists("native", $_GET))
+	{
+		$authors = getAuthors('SELECT ID FROM AUTHORS WHERE NATIVE = true LIMIT '.$lost.','.(AUTHORSONPAGE+1));
+
+		if (isset($authors[AUTHORSONPAGE])) 
+		{
+			$nextButton = true;
+			unset($authors[AUTHORSONPAGE]);
+		}
+
+		$nextPage = "show_authors.php?native&page=".($page + 1);
+		$prevPage = "show_authors.php?native&page=".($page - 1);
+
+		$title = "Отечественные авторы";	
+	}
 	else
 	{
-		$authors = getAuthors('SELECT ID FROM AUTHORS
-							   LIMIT '.$lost.','.(AUTHORSONPAGE+1) );
+		$authors = getAuthors('SELECT ID FROM AUTHORS LIMIT '.$lost.','.(AUTHORSONPAGE+1));
 
 		if (isset($authors[AUTHORSONPAGE])) 
 		{
@@ -40,7 +69,8 @@
 		$nextPage = "show_authors.php?page=".($page + 1);
 		$prevPage = "show_authors.php?page=".($page - 1);
 
-		$title = "Авторы";	
+		$title = "Все авторы";
+
 	}
 
 	require_once "head.php";
@@ -50,7 +80,7 @@
 
 
 <div id = "content">
-	<h3 align = "center">Отечественные авторы:</h3>
+	<h3 align = "center"><?php echo $title;?></h3>
 
 		<table class = "table_authors" cols = "4">
 			<?php

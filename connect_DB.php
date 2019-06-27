@@ -120,6 +120,17 @@ class Author
 	private $id;
 	private $name;
 	private $image = 'https://im0-tub-ru.yandex.net/i?id=dabc0b838c62f3a1b339010b40ced4fd&n=13';
+	private $native;
+
+	function setNative($value)
+	{
+		$this->native = $value;
+	}
+
+	function getNative()
+	{
+		return $this->native;
+	}		
 
 	function setId($id)
 	{
@@ -194,6 +205,7 @@ function getAuthorsById($id)
 			$author->setName($row['NAME']);
 			$author->setImage($row['IMAGE']);
 			$author->setId($row['ID']);
+			$author->setNative($row['NATIVE']);
 			$authors[] = $author;
 		}
 
