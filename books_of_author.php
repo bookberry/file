@@ -8,8 +8,7 @@
 	if (empty($authors)) 
 		invalid_urlParam('authorId', $_GET['authorId']);
 
-	$authorName = $authors[0]->getName();
-	$authorImage = $authors[0]->getImage();
+	$author = $authors[0];
 
 	/* Узнаем кол-во книг автора и кол-во страниц */
 	$sqlResult = mysqli_query($link, "SELECT COUNT(BOOKS.ID) FROM BOOKS
@@ -42,15 +41,34 @@
 ?>
 <div id="content">
 	<div style = "padding: 10px">
-		<img src="<?php  echo "$authorImage"; ?>" style="float: left; width: 300px; height: 300px">
+		<img src="<?php  echo $author->getImage(); ?>" style="float: left; width: 350px; height: 350px">
 		
-		<h1><?php echo "$authorName"; ?></h1>
-		<p>Родился:		<?php echo ""; ?></p>
-		<p>Вырос:		<?php echo ""; ?></p>
-		<p>Гражданство: <?php echo ""; ?></p>
-		<p>Возраст:		<?php echo ""; ?></p>
-		<p>Умер:		<?php echo ""; ?></p>
-		<p>Описание:	<?php echo ""; ?></p>
+		<h1><?php echo $author->getName(); ?></h1>
+
+		<?php
+			$characters = array(
+				"birthday"		=> 	array("mark" => "Родился", 			"value" => $author->birthDay),
+				"birthplace"	=> 	array("mark" => "Место рождения",	"value" => $author->birthPlace),
+				"citizeship"	=> 	array("mark" => "Гражданство",		"value" => $author->citizeShip),
+				"job" 			=> 	array("mark" => "Деятельность",		"value" => $author->job),
+				"genre"			=> 	array("mark" => "Жанры",			"value" => $author->genre),
+				"direction"		=> 	array("mark" => "Направление",		"value" => $author->direction),
+				"language"		=> 	array("mark" => "Языки",			"value" => $author->language),
+				"deathday"		=> 	array("mark" => "Умер",				"value" => $author->deathDay),
+				"description"	=>	array("mark" => "Описание",			"value" => $author->description),
+			);
+
+			foreach ($characters as $key => $value) 
+			{
+				$val  = $value["value"];
+				if ($val)
+				{
+					$mark = $value["mark"];
+					echo "<p>$mark: $val</p>";					
+				}
+			}
+
+		?>
 	</div>
 
 	

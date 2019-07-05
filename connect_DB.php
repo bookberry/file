@@ -121,6 +121,15 @@ class Author
 	private $name;
 	private $image = 'https://im0-tub-ru.yandex.net/i?id=dabc0b838c62f3a1b339010b40ced4fd&n=13';
 	private $native;
+	public $description;
+	public $birthPlace;
+	public $citizeShip;
+	public $job;
+	public $direction;
+	public $genre;
+	public $language;
+	public $birthDay;
+	public $deathDay;
 
 	function setNative($value)
 	{
@@ -206,6 +215,16 @@ function getAuthorsById($id)
 			$author->setImage($row['IMAGE']);
 			$author->setId($row['ID']);
 			$author->setNative($row['NATIVE']);
+
+			$author->description = $row['DESCRIPTION'];
+			$author->birthPlace = $row['BIRTHPLACE'];
+			$author->citizeShip = $row['CITIZENSHIP'];
+			$author->job = $row['JOB'];
+			$author->direction = $row['DIRECTION'];
+			$author->genre = $row['GENRE'];
+			$author->language = $row['LANGUAGE'];
+			$author->birthDay = $row['BIRTHDAY'];	
+			$author->deathDay = $row['DEATHDAY'];	
 			$authors[] = $author;
 		}
 
